@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reebok Header and Shoes Grid</title>
+    <link rel="stylesheet" href="reebok.css"> <!-- Ensure this CSS file is correctly linked -->
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <div class="logo">
+            <img src="./reebok.png" alt="Reebok Logo"> <!-- Ensure the path to the logo is correct -->
+        </div>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="#">New</a></li>
+                <li><a href="#">Icons</a></li>
+                <li><a href="#">Men</a></li>
+                <li><a href="#">Women</a></li>
+                <li><a href="#">Sports</a></li>
+                <li><a href="#">Classic</a></li>
+                <li style="color: brown;"><a href="#">Sale</a></li> <!-- Style inline for 'Sale' -->
+            </ul>
+        </nav>
+        
+        <div class="search-container">
+            <span class="search-icon">🔍</span> <!-- Search Icon -->
+            <input type="text" class="search-input" placeholder="Search Classic"> <!-- Search Input -->
+        </div>
+
+        <!-- Express Delivery Button with Car Icon -->
+        <div class="express-delivery-container">
+            <button class="express-delivery-button">
+                <span class="delivery-icon">🚚</span> <!-- Car Icon -->
+                <span class="button-text">
+                    Express Delivery
+                    <small class="store-meta">Select your nearest store ></small>
+                </span>
+            </button>
+        </div>
+    </header>
+
+    <!-- Shoes Grid Section -->
+    <section class="shoes-grid">
+        <div class="shoe-item">
+            <img src="./shoe1.png" alt="Shoe 1"> <!-- Make sure shoe1.png exists -->
+            <div class="product-details">
+                <span class="category">Classic Shoes</span><br>
+                <span class="product-name">Reebok Women Club C 85 W</span> 
+                <span class="price">₹7,599</span>
+            </div>
+        </div>
+        <div class="shoe-item">
+            <img src="./shoe2.png" alt="Shoe 2">
+            <div class="product-details">
+                <span class="category">Training Shoes</span><br>
+                <span class="product-name">Reebok Women NFX Trainer</span> 
+                <span class="price">₹6,999</span>
+            </div>
+        </div>
+        <div class="shoe-item">
+            <img src="./shoe3.png" alt="Shoe 3">
+            <div class="product-details">
+                <span class="category">Running Shoes</span><br>
+                <span class="product-name">Reebok Women Energen Plus 2</span>
+                <span class="price">₹6,999</span>
+            </div>
+        </div>
+        <div class="shoe-item">
+            <img src="./shoe4.png" alt="Shoe 4">
+            <div class="product-details">
+                <span class="category">Classic Shoes</span><br>
+                <span class="product-name">Reebok Unisex Classic Leather</span>
+                <span class="price">₹7,999</span>
+            </div>
+        </div>
+    </section>
+</body>
+</html>

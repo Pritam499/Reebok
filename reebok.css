@@ -1,0 +1,220 @@
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #fffefe;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    color: black;
+    padding: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.logo {
+    flex: 0 0 auto;
+}
+
+.logo img {
+    width: 130px;
+}
+
+nav {
+    flex: 1;
+    margin-left: 40px; 
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    justify-content: flex-start;
+}
+
+nav ul li a {
+    color: black;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 16px;
+}
+
+.search-cart {
+    flex: 0 0 auto; 
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.search-cart input {
+    padding: 5px 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.search-cart a.cart-icon {
+    font-size: 24px;
+    text-decoration: none;
+    color: black; 
+}
+
+.shoes-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    padding: 40px;
+}
+
+.shoe-item {
+    background-color: white;
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.shoe-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.shoe-item p {
+    margin-top: 15px;
+    font-weight: bold;
+    color: black; 
+}
+
+.product-details {
+    text-align: left;
+    font-family: Arial, sans-serif;
+}
+
+.product-details .category {
+    display: inline-block;
+    text-transform: uppercase;
+    font-size: 12px;
+    color: gray; 
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.product-details .product-name {
+    display: block;
+    font-size: 18px;
+    margin-top: 5px;
+    color: black;
+}
+
+.product-details .price {
+    display: block;
+    font-size: 16px;
+    font-weight: bold;
+    color: #000000; 
+    margin-top: 5px;
+}
+
+/* New Styles for Express Delivery Button */
+
+/* Container and layout */
+.express-delivery-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+/* Button styles */
+.express-delivery-button {
+    background-color: #cd0f35;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 50px;
+    font-size: 16px;
+    font-weight: bold;
+    display: flex;
+    align-items: center; /* Align icon and text horizontally */
+    cursor: pointer;
+    position: relative;
+    margin-top: 5px;
+}
+
+/* Icon styling (placed on the left) */
+.express-delivery-button .delivery-icon {
+    margin-right: 10px; /* Add space between the icon and the text */
+    font-size: 24px; /* Make icon a bit larger */
+}
+
+/* Button text container (right of the icon) */
+.button-text {
+    display: flex;
+    flex-direction: column; /* Stack the two text items vertically */
+    align-items: flex-start; /* Align text to the left */
+}
+
+/* Main text of the button */
+.button-text {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+/* Store meta text styling inside the button */
+.store-meta {
+    font-size: 12px; /* Smaller font for meta text */
+    color: #ffffff; /* Lighter color */
+    margin-top: 5px;
+    opacity: 0.8; /* Slightly transparent */
+}
+
+/* Button hover effect */
+.express-delivery-button:hover {
+    background-color: #e60000; /* Darker red on hover */
+}
+
+/* Container for the search bar */
+.search-container {
+    display: flex;
+    align-items: center;
+    position: relative;
+    border-bottom: 2px solid black; /* Underline style */
+    padding-bottom: 5px; /* Spacing for the underline */
+}
+
+/* Search icon styling */
+.search-icon {
+    font-size: 18px; /* Adjust icon size */
+    color: black; /* Icon color */
+    margin-right: 10px; /* Space between icon and input */
+}
+
+/* Input field styling */
+.search-input {
+    border: none;
+    outline: none;
+    font-size: 16px;
+    padding: 5px 0; /* Adjust padding to match the underline style */
+    width: 100%; /* Full width */
+    font-family: Arial, sans-serif; /* Font style */
+    color: black; /* Text color */
+    background-color: transparent; /* Make background transparent */
+}
+
+/* Placeholder text style */
+.search-input::placeholder {
+    color: black; /* Placeholder text color */
+    opacity: 0.5; /* Slightly faded */
+}
+
+/* Input focus - only underline color changes */
+.search-input:focus {
+    border-bottom: 2px solid black; /* Keep the underline on focus */
+}
